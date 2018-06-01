@@ -35,6 +35,9 @@ gem 'will_paginate', '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'rails-controller-testing'
 
+# JavaScript webpacker bundle 
+gem 'webpacker', '~> 3.5'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -57,7 +60,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '~> 0.21' 
+  gem 'pg', '~> 0.21'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
