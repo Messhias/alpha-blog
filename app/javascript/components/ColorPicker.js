@@ -5,13 +5,13 @@ import { SketchPicker } from 'react-color';
 class ColorPicker extends React.Component {
     constructor(props){
         super(props);
-        this.state = { selector: props.selector };
+        this.state = { color: props.color };
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange = (color) => {
         document.body.style.background = color.hex;
-        let elem = document.querySelector('#'+this.state.selector)
+        let elem = document.querySelector('#'+this.state.color)
         elem.value = color.hex;
     }
 
