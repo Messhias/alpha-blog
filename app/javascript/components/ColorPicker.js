@@ -9,7 +9,7 @@ class ColorPicker extends React.Component {
     }
 
     handleChange = (color) => {
-        console.log(color.hex);
+        document.body.style.background = color.hex;
     }
 
     render() {
